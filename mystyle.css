@@ -1,0 +1,27 @@
+.jumbotron{
+    background-color:#5DBCD2 ;
+}
+.card-deck{
+    margin-right: 15%;
+}
+.gallery{
+    margin-left: 35%;
+}
+
+
+
+#img_1{
+    width: 240px;
+}
+#img_2{
+    width: 240px;
+}
+#img_3{
+    width: 240px;
+}
+#img_4{
+    width: 240px;
+}
+#img_5{
+    margin-left: 20px;
+}

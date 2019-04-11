@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+      <script>
+          // Initialize Firebase
+          var config = {
+              apiKey: "AIzaSyBynS3F79aRepRe4KXjIXNeKRfh80yCksU",
+              authDomain: "webapp1-1479f.firebaseapp.com",
+              databaseURL: "https://webapp1-1479f.firebaseio.com",
+              projectId: "webapp1-1479f",
+              storageBucket: "webapp1-1479f.appspot.com",
+              messagingSenderId: "938274220631"
+          };
+          firebase.initializeApp(config);
+      </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="./css/mystyle.css">
+    <title>My Personal Portfolio</title>
+  </head>
+<body>
+      
+<div class="container-fluid">
+      <!-- The Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">My Personal Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Resume
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="skills.html">Skills</a>
+                            <a class="dropdown-item" href="education.html">Education</a>
+                            <a class="dropdown-item" href="experiences.html">Experiences</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="followme.html">Follow Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="sitemap.html">Sitemap</a>
+                    </li>
+        </ul>
+      </div>
+    </nav>
+    </div> 
+      
+      
+    <br>
+    <!-- Jumbotron -->  
+    <div class="container">
+        <div class="jumbotron">
+          <h1 class="display-4">My Portfolio</h1>
+          <p class="lead">Hi! I am Leo. I'm studying CIT in BCIT as a international student right now. I come from China. I love hiking and traveling.</p>
+          <p>If you want to learn more about me, please feel free to go around on my website</p>
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" href="about.html" role="button">Learn more</a>
+          </p>
+        </div>
+      </div>
+    
+    <!-- Content -->
+<div class='container'>
+    <div class='row justify-content-center' id="products"></div>
+</div>
+
+
+    <div class="card-deck" style = "margin-right: 15%;">
+    <div class="card">
+        <div class="card-body text-center">
+            <img class="card-img-top" src="./img/card1.jpg" alt="Card image3" >
+            <div class="card-body">
+                <h4 class="card-title">Any comment?</h4>
+                <p class="card-text">Please leave a message, I will take it seriously.</p>
+                <a href="contact.html" class="btn btn-primary">comment</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body text-center">
+            <img class="card-img-top" src="./img/card2.jpg" alt="Card image2" >
+            <div class="card-body">
+                <h4 class="card-title">Experiences</h4>
+                <p class="card-text">Want to know my volunteer experience or work experience?</p>
+                <a href="experiences.html" class="btn btn-primary">experiences</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body text-center">
+            <img class="card-img-top" src="./img/card3.jpg" alt="Card image3" >
+            <div class="card-body">
+                <h4 class="card-title">Education</h4>
+                <p class="card-text">Click here to view my education experience.</p>
+                <a href="education.html" class="btn btn-primary">education</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body text-center">
+            <img class="card-img-top" src="./img/card4.jpg" alt="Card image4" >
+            <div class="card-body">
+                <h4 class="card-title">My skills</h4>
+                <p class="card-text">Want to know how many magical special skills I have?</p>
+                <a href="skills.html" class="btn btn-primary">skills</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <span class="text-muted">Copyleft &copy; 2019</span>
+        </div>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
